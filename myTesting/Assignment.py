@@ -20,7 +20,7 @@ def print_prediction(argument, accuracy):
     return
 
 
-# reading the data set and cleansing the data
+# reading and cleansing the data set
 df = pd.read_csv('column_3C.dat', sep=None, engine='python')
 df.replace('?', -99999, inplace=True)
 
